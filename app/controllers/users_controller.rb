@@ -13,6 +13,7 @@ class UsersController < ApplicationController
       user: username,
       repo: "#{username}.github.io"
     )
+
     respond_with @repo.dump.to_json
   end
 end
