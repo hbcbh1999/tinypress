@@ -1,14 +1,29 @@
 class Trie
 
-  def initialize
+  def self.for(repo:)
+    new(repo: repo)
+  end
+
+  def self.fill_with(repo:)
+    new(repo: repo)
+  end
+
+  def initialize(repo:)
+    @repo = repo
   end
 
   def structure
     {} # TODO(@dain): Add
   end
 
+  def find_all
+  end
+
   def level(int:)
     to_level(int)
+  end
+
+  def dump!
   end
 
   # == Level Order Traversal
